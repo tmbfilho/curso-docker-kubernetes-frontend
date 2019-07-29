@@ -6,4 +6,4 @@ before_install:
   - docker build -t tmbfilho/myimage -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true tmbfilho/myimage npm run test --passWithNoTests
+  - docker run -e CI=true tmbfilho/myimage npm run test
